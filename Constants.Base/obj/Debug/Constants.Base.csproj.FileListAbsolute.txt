@@ -1,0 +1,6 @@
+C:\Users\kevin\source\repos\BooksApp\Constants.Base\bin\Debug\Constants.Base.dll
+C:\Users\kevin\source\repos\BooksApp\Constants.Base\bin\Debug\Constants.Base.pdb
+C:\Users\kevin\source\repos\BooksApp\Constants.Base\obj\Debug\Constants.Base.csprojAssemblyReference.cache
+C:\Users\kevin\source\repos\BooksApp\Constants.Base\obj\Debug\Constants.Base.csproj.CoreCompileInputs.cache
+C:\Users\kevin\source\repos\BooksApp\Constants.Base\obj\Debug\Constants.Base.dll
+C:\Users\kevin\source\repos\BooksApp\Constants.Base\obj\Debug\Constants.Base.pdb

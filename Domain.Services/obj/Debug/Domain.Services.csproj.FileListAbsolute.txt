@@ -1,0 +1,15 @@
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Domain.Services.dll
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Domain.Services.pdb
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Constants.Base.dll
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Domain.Models.dll
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Domain.Resources.dll
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Constants.Base.pdb
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Domain.Models.pdb
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Domain.Resources.pdb
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\obj\Debug\Domain.Services.csprojAssemblyReference.cache
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\obj\Debug\Domain.Services.csproj.CoreCompileInputs.cache
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\obj\Debug\Domain.Services.csproj.CopyComplete
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\obj\Debug\Domain.Services.dll
+C:\Users\kevin\source\repos\BooksApp\Domain.Services\obj\Debug\Domain.Services.pdb

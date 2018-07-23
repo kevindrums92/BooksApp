@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\App.storyboardc\1164-view-1170.nib">
+      <LogicalName>App.storyboardc/1164-view-1170.nib</LogicalName>
+      <InterfaceDefinition>Views/App.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\App.storyboardc\271-view-272.nib">
+      <LogicalName>App.storyboardc/271-view-272.nib</LogicalName>
+      <InterfaceDefinition>Views/App.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\App.storyboardc\5583-view-5584.nib">
+      <LogicalName>App.storyboardc/5583-view-5584.nib</LogicalName>
+      <InterfaceDefinition>Views/App.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\App.storyboardc\BookDetailsViewController.nib">
+      <LogicalName>App.storyboardc/BookDetailsViewController.nib</LogicalName>
+      <InterfaceDefinition>Views/App.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\App.storyboardc\BooksViewController.nib">
+      <LogicalName>App.storyboardc/BooksViewController.nib</LogicalName>
+      <InterfaceDefinition>Views/App.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\App.storyboardc\Info.plist">
+      <LogicalName>App.storyboardc/Info.plist</LogicalName>
+      <InterfaceDefinition>Views/App.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\App.storyboardc\SearchViewController.nib">
+      <LogicalName>App.storyboardc/SearchViewController.nib</LogicalName>
+      <InterfaceDefinition>Views/App.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\App.storyboardc\UINavigationController-262.nib">
+      <LogicalName>App.storyboardc/UINavigationController-262.nib</LogicalName>
+      <InterfaceDefinition>Views/App.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\BooksTVCell.nib">
+      <LogicalName>BooksTVCell.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\LaunchScreen.nib">
+      <LogicalName>LaunchScreen.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\NotRecords.nib">
+      <LogicalName>NotRecords.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\RecentlySearchesTVCell.nib">
+      <LogicalName>RecentlySearchesTVCell.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>

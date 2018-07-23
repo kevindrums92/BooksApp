@@ -1,0 +1,8 @@
+C:\Users\kevin\source\repos\BooksApp\Domain.Resources\bin\Debug\Domain.Resources.dll
+C:\Users\kevin\source\repos\BooksApp\Domain.Resources\bin\Debug\Domain.Resources.pdb
+C:\Users\kevin\source\repos\BooksApp\Domain.Resources\obj\Debug\Domain.Resources.csprojAssemblyReference.cache
+C:\Users\kevin\source\repos\BooksApp\Domain.Resources\obj\Debug\Domain.Resources.Resources.Messages.resources
+C:\Users\kevin\source\repos\BooksApp\Domain.Resources\obj\Debug\Domain.Resources.csproj.GenerateResource.cache
+C:\Users\kevin\source\repos\BooksApp\Domain.Resources\obj\Debug\Domain.Resources.csproj.CoreCompileInputs.cache
+C:\Users\kevin\source\repos\BooksApp\Domain.Resources\obj\Debug\Domain.Resources.dll
+C:\Users\kevin\source\repos\BooksApp\Domain.Resources\obj\Debug\Domain.Resources.pdb

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="262">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="261">
+            <objects>
+                <navigationController id="262" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="264" barStyle="black">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.82745098039215681" green="0.18431372549019609" blue="0.18431372549019609" alpha="1"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="579" destination="271" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="265" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-377" y="-395"/>
+        </scene>
+        <scene sceneID="270">
+            <objects>
+                <viewController id="271" sceneMemberID="viewController" customClass="BooksViewController" storyboardIdentifier="BooksViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="268"/>
+                        <viewControllerLayoutGuide type="bottom" id="269"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="272">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="584" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="63" width="414" height="60"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.84705882352941175" green="0.30196078431372547" blue="0.27450980392156865" alpha="1"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" id="856" translatesAutoresizingMaskIntoConstraints="NO" placeholder="¿Que libro deseas buscar?" translucent="NO">
+                                        <rect key="frame" x="10" y="0.0" width="394" height="60"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <color key="tintColor" colorSpace="calibratedRGB" red="0.0392156862745098" green="0.37647058823529411" blue="1" alpha="1"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.36862745098039218" green="0.81960784313725488" blue="0.74901960784313726" alpha="1"/>
+                                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.84705882352941175" green="0.30196078431372547" blue="0.30196078431372547" alpha="1"/>
+                                    </searchBar>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="587" firstItem="584" firstAttribute="height" constant="60"/>
+                                    <constraint id="857" firstItem="856" firstAttribute="top" secondItem="584" secondAttribute="top"/>
+                                    <constraint id="858" firstItem="856" firstAttribute="leading" secondItem="584" secondAttribute="leading" priority="998" constant="10"/>
+                                    <constraint id="859" firstItem="856" firstAttribute="trailing" secondItem="584" secondAttribute="trailing" constant="-10"/>
+                                    <constraint id="860" firstItem="856" firstAttribute="bottom" secondItem="584" secondAttribute="bottom"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="870" translatesAutoresizingMaskIntoConstraints="NO" allowsSelection="NO">
+                                <rect key="frame" x="0.0" y="123" width="414" height="613"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="585" firstItem="584" firstAttribute="trailing" secondItem="272" secondAttribute="trailingMargin" constant="20"/>
+                            <constraint id="586" firstItem="272" firstAttribute="leadingMargin" secondItem="584" secondAttribute="leading" constant="20"/>
+                            <constraint id="588" firstItem="584" firstAttribute="top" secondItem="268" secondAttribute="bottom" constant="-1"/>
+                            <constraint id="873" firstItem="870" firstAttribute="top" secondItem="584" secondAttribute="bottom"/>
+                            <constraint id="874" firstItem="272" firstAttribute="leadingMargin" secondItem="870" secondAttribute="leading" constant="20"/>
+                            <constraint id="875" firstItem="870" firstAttribute="trailing" secondItem="272" secondAttribute="trailingMargin" constant="20"/>
+                            <constraint id="876" firstItem="870" firstAttribute="bottom" secondItem="269" secondAttribute="top"/>
+                        </constraints>
+                    </view>
+                    <navigationItem id="578" key="navigationItem" title="Books App"/>
+                    <connections>
+                        <outlet property="sbSearcher" destination="856" id="name-outlet-856"/>
+                        <outlet property="tvBooks" destination="870" id="name-outlet-870"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="273" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="-398"/>
+        </scene>
+        <scene sceneID="1163">
+            <objects>
+                <viewController id="1164" sceneMemberID="viewController" customClass="SearchViewController" storyboardIdentifier="SearchViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1180"/>
+                        <viewControllerLayoutGuide type="bottom" id="1185"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1170">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="1171" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="19" width="414" height="60"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.84705882352941175" green="0.30196078431372547" blue="0.27450980392156865" alpha="1"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" id="1166" translatesAutoresizingMaskIntoConstraints="NO" placeholder="¿Que libro deseas buscar?" translucent="NO" misplaced="YES">
+                                        <rect key="frame" x="50" y="0.0" width="288" height="60"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <color key="tintColor" colorSpace="calibratedRGB" red="0.0392156862745098" green="0.37647058823529411" blue="1" alpha="1"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.36862745098039218" green="0.81960784313725488" blue="0.74901960784313726" alpha="1"/>
+                                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.84705882352941175" green="0.30196078431372547" blue="0.30196078431372547" alpha="1"/>
+                                        <items>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2528" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="-79" y="-34" width="240" height="128"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2530" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="18" y="-23" width="240" height="128"/>
+                                            </imageView>
+                                        </items>
+                                    </searchBar>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2531" key="tableHeaderView" image="left-arrow.png">
+                                        <rect key="frame" x="14" y="16" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint id="2536" firstItem="2531" firstAttribute="height" constant="28"/>
+                                            <constraint id="2537" firstItem="2531" firstAttribute="width" constant="28"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2532" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                        <rect key="frame" x="346" y="15" width="53" height="30"/>
+                                        <state key="normal" title="Buscar">
+                                            <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="BtnSearch_TouchUpInside:" destination="1164" id="4866" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="1172" firstItem="1171" firstAttribute="height" constant="60"/>
+                                    <constraint id="1173" firstItem="1166" firstAttribute="top" secondItem="1171" secondAttribute="top"/>
+                                    <constraint id="1176" firstItem="1166" firstAttribute="bottom" secondItem="1171" secondAttribute="bottom"/>
+                                    <constraint id="2533" firstItem="1171" firstAttribute="trailing" secondItem="2532" secondAttribute="trailing" constant="15"/>
+                                    <constraint id="2534" firstItem="2532" firstAttribute="centerY" secondItem="1166" secondAttribute="centerY"/>
+                                    <constraint id="2535" firstItem="2532" firstAttribute="leading" secondItem="1166" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="4214" firstItem="2531" firstAttribute="centerY" secondItem="1166" secondAttribute="centerY"/>
+                                    <constraint id="4215" firstItem="2531" firstAttribute="leading" secondItem="1171" secondAttribute="leading" constant="14"/>
+                                    <constraint id="4216" firstItem="1166" firstAttribute="leading" secondItem="2531" secondAttribute="trailing" constant="8"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1168" translatesAutoresizingMaskIntoConstraints="NO" allowsSelection="NO">
+                                <rect key="frame" x="20" y="118" width="394" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="7256" translatesAutoresizingMaskIntoConstraints="NO" hidden="YES">
+                                <rect key="frame" x="0.0" y="76" width="414" height="40"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busquedas recientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7261" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                        <rect key="frame" x="30" y="10" width="176" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="7257" firstItem="7256" firstAttribute="height" constant="40"/>
+                                    <constraint id="7316" firstItem="7261" firstAttribute="centerY" secondItem="7256" secondAttribute="centerY"/>
+                                    <constraint id="7317" firstItem="7261" firstAttribute="leading" secondItem="7256" secondAttribute="leading" constant="30"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1177" firstItem="1171" firstAttribute="trailing" secondItem="1170" secondAttribute="trailingMargin" constant="20"/>
+                            <constraint id="1178" firstItem="1170" firstAttribute="leadingMargin" secondItem="1171" secondAttribute="leading" constant="20"/>
+                            <constraint id="1179" firstItem="1171" firstAttribute="top" secondItem="1180" secondAttribute="bottom" constant="-1"/>
+                            <constraint id="1182" firstItem="1170" firstAttribute="leadingMargin" secondItem="1168" secondAttribute="leading"/>
+                            <constraint id="1183" firstItem="1168" firstAttribute="trailing" secondItem="1170" secondAttribute="trailingMargin" constant="20"/>
+                            <constraint id="1184" firstItem="1168" firstAttribute="bottom" secondItem="1185" secondAttribute="top"/>
+                            <constraint id="7258" firstItem="1171" firstAttribute="bottom" secondItem="7256" secondAttribute="top" constant="3"/>
+                            <constraint id="7259" firstItem="1170" firstAttribute="leadingMargin" secondItem="7256" secondAttribute="leading" constant="20"/>
+                            <constraint id="7260" firstItem="7256" firstAttribute="trailing" secondItem="1170" secondAttribute="trailingMargin" constant="20"/>
+                            <constraint id="7374" firstItem="1168" firstAttribute="top" secondItem="7256" secondAttribute="bottom" constant="2"/>
+                            <constraint id="7375" firstItem="1168" firstAttribute="top" secondItem="7256" secondAttribute="bottom" constant="2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem id="1169" key="navigationItem" title="Books App"/>
+                    <connections>
+                        <outlet property="sbSearcher" destination="1166" id="1165"/>
+                        <outlet property="tvRecentlySearches" destination="1168" id="name-outlet-1168"/>
+                        <outlet property="ivLeftArrow" destination="2531" id="name-outlet-2531"/>
+                        <outlet property="btnSearch" destination="2532" id="name-outlet-2532"/>
+                        <outlet property="vTitle" destination="7256" id="name-outlet-7256"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1186" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="-398"/>
+        </scene>
+        <scene sceneID="5582">
+            <objects>
+                <viewController id="5583" sceneMemberID="viewController" customClass="BookDetailsViewController" storyboardIdentifier="BookDetailsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5580"/>
+                        <viewControllerLayoutGuide type="bottom" id="5581"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5584">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Implementing SugarCRM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5624" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="0.0">
+                                <rect key="frame" x="30" y="40" width="351" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20" weight="semibold"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="0.72941176470588232" blue="0.33333333333333331" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5625" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="44" y="96" width="325" height="175"/>
+                                <constraints>
+                                    <constraint id="6042" firstItem="5625" firstAttribute="height" constant="175"/>
+                                    <constraint id="6043" firstItem="5625" firstAttribute="width" constant="325"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5626" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" numberOfLines="0.0">
+                                <rect key="frame" x="30" y="300" width="351" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="5627" firstItem="5624" firstAttribute="top" secondItem="5580" secondAttribute="bottom" constant="20"/>
+                            <constraint id="5628" firstItem="5624" firstAttribute="leading" secondItem="5584" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="5629" firstItem="5584" firstAttribute="trailingMargin" secondItem="5624" secondAttribute="trailing" constant="13"/>
+                            <constraint id="6039" firstItem="5626" firstAttribute="top" secondItem="5625" secondAttribute="bottom" constant="29"/>
+                            <constraint id="6040" firstItem="5626" firstAttribute="leading" secondItem="5584" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="6041" firstItem="5584" firstAttribute="trailingMargin" secondItem="5626" secondAttribute="trailing" constant="13"/>
+                            <constraint id="6044" firstItem="5625" firstAttribute="top" secondItem="5624" secondAttribute="bottom" constant="32"/>
+                            <constraint id="6046" firstItem="5625" firstAttribute="centerX" secondItem="5584" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbTitle" destination="5624" id="name-outlet-5624"/>
+                        <outlet property="lbSubtitle" destination="5626" id="name-outlet-5626"/>
+                        <outlet property="ivImage" destination="5625" id="name-outlet-5625"/>
+                    </connections>
+                    <navigationItem title="Books App" id="6836" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5585" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="-388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left-arrow.png" width="128" height="128"/>
+    </resources>
+</document>
