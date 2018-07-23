@@ -3,6 +3,9 @@ using Foundation;
 
 namespace BooksApp
 {
+    /// <summary>
+    /// Clase para administrar los user preferences
+    /// </summary>
 	public class UserPreferencesClient
 	{
 		public UserPreferencesClient ()

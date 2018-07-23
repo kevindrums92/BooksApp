@@ -11,7 +11,14 @@ namespace BooksApp
 {
     public class BooksTVSource : UITableViewSource
     {
+        /// <summary>
+        /// Evento que será disparado cuando se llegue al bottom del scroll
+        /// </summary>
         public event EventHandler LoadMoreData;
+        
+        /// <summary>
+        /// Listado de items
+        /// </summary>
         public List<Book> DataList;
 
         public BooksTVSource(List<Book> dataList)
@@ -37,6 +44,11 @@ namespace BooksApp
             return count;
         }
 
+        /// <summary>
+        /// en este metodo reimplementado si el número de items es 0, se muestra un mensaje de not records
+        /// </summary>
+        /// <param name="tableView"></param>
+        /// <returns></returns>
         public override nint NumberOfSections(UITableView tableView)
         {
             tableView.BackgroundView = null;

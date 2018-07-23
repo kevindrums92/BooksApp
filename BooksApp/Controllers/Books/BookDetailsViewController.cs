@@ -9,10 +9,16 @@ namespace BooksApp
     public partial class BookDetailsViewController : UIViewController
     {
         #region Properties
+        /// <summary>
+        /// Book que está en detalle
+        /// </summary>
         public Book BookItem { get; set; }
         #endregion
 
         #region Methods
+        /// <summary>
+        /// Carga los datos iniciales
+        /// </summary>
         void LoadData()
         {
             lbTitle.Text = BookItem.Title;

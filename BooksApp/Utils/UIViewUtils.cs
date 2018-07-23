@@ -3,12 +3,20 @@ using UIKit;
 
 namespace BooksApp
 {
+    /// <summary>
+    /// Clase de utilidades para los UIViews
+    /// </summary>
     public class UIViewUtils
     {
         public UIViewUtils()
         {
         }
 
+        /// <summary>
+        /// Metodo para agregar sombra a los uiview, para dar efecto de card
+        /// </summary>
+        /// <param name="control"></param>
+        /// <param name="bgColor"></param>
 		public static void AddShadow(UIView control, UIColor bgColor)
         {
             var layer = control.Layer;
@@ -24,6 +32,11 @@ namespace BooksApp
             layer.BackgroundColor = bgColor.CGColor;
         }
 
+        /// <summary>
+        /// Metodo para agregar efecto de input a un UIVIew
+        /// </summary>
+        /// <param name="control"></param>
+        /// <param name="bgColor"></param>
 		public static void AddBoxEffect(UIView control, UIColor bgColor)
         {
             var layer = control.Layer;
@@ -43,6 +56,11 @@ namespace BooksApp
             layer.BackgroundColor = bgColor.CGColor;
         }
 
+        /// <summary>
+        /// Metodo para agregar background color a los UIStackView
+        /// </summary>
+        /// <param name="color"></param>
+        /// <param name="control"></param>
 		public static void AddUIStackViewBackground(UIColor color, UIStackView control){
 			var subView = new UIView(frame: control.Bounds);
 			subView.BackgroundColor = color;

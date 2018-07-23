@@ -3,6 +3,9 @@ using System.Net;
 
 namespace Domain.Services
 {
+    /// <summary>
+    /// Clase base de los servicios
+    /// </summary>
     public class BaseServicesModel
     {
         public static string HandleWebExceptionErrors(System.Net.WebException webEx)

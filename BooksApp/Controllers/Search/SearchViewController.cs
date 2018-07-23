@@ -11,8 +11,14 @@ namespace BooksApp
     public partial class SearchViewController : UIViewController
     {
         #region Properties
+        /// <summary>
+        /// Propiedad que contiene el Table view source de las búsquedas recientes
+        /// </summary>
         public RecentlySearchesTVSource RecentlySearchesTVSource { get; set; }
 
+        /// <summary>
+        /// Propiedad get que devuelve las últimas búsquedas que se cargan desde los user preferences
+        /// </summary>
         public List<string> RecentlySearches
         {
             get
@@ -49,6 +55,9 @@ namespace BooksApp
         #endregion
 
         #region Methods
+        /// <summary>
+        /// Se configuran eventos
+        /// </summary>
         void ConfigureEvents()
         {
             ivLeftArrow.BringSubviewToFront(this.View);
@@ -60,16 +69,25 @@ namespace BooksApp
             sbSearcher.BecomeFirstResponder();
         }
 
+        /// <summary>
+        /// se configura el View para ocultar el back por defecto del control de navegación
+        /// </summary>
         void ConfigureView()
         {
             this.NavigationItem.SetHidesBackButton(true, false);
         }
 
+        /// <summary>
+        /// Método que va a navegar atras
+        /// </summary>
         void GoBack()
         {
             this.NavigationController.PopViewController(true);
         }
 
+        /// <summary>
+        /// Se hace carga de las búsquedas recientes
+        /// </summary>
         void LoadRecentlySearches()
         {
             this.tvRecentlySearches.RegisterNibForCellReuse(UINib.FromName("RecentlySearchesTVCell", null), "RecentlySearchesTVCell");
@@ -89,6 +107,10 @@ namespace BooksApp
             }
         }
 
+        /// <summary>
+        /// Metodo que lanza el buscar al view anterior
+        /// </summary>
+        /// <param name="filter"></param>
         void TriggerFilter(string filter)
         {
             //Valido que el texto clickeado o escrito, no esté agregado en el listado temporal
@@ -105,8 +127,15 @@ namespace BooksApp
         #endregion
 
         #region Events
+        /// <summary>
+        /// Evento para enviar a buscar
+        /// </summary>
         public event EventHandler<string> TriggerSearch;
 
+        /// <summary>
+        /// Evento click del botón del view
+        /// </summary>
+        /// <param name="sender"></param>
         partial void BtnSearch_TouchUpInside(UIButton sender)
         {
             if (!string.IsNullOrEmpty(sbSearcher.Text))
@@ -115,6 +144,11 @@ namespace BooksApp
             }
         }
 
+        /// <summary>
+        /// Evento click de los items de búsquedas recientes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RecentlySearchesTVSource_ItemClicked(object sender, string e)
         {
             TriggerFilter(e);

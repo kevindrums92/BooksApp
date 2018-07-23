@@ -9,8 +9,16 @@ using UIKit;
 
 namespace BooksApp.Utils
 {
+    /// <summary>
+    /// Clase de apoyo de imagenes
+    /// </summary>
     public class ImageUtils
     {
+        /// <summary>
+        /// Metodo que sirve para colocar una imagen desde la web en un imageview
+        /// </summary>
+        /// <param name="url">url de la imagen</param>
+        /// <param name="control">Control image view</param>
         public static void SetImageToControlFromUrl(string url, UIImageView control)
         {
             ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) => true;

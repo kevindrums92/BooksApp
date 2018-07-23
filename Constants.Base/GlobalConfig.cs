@@ -2,6 +2,9 @@
 
 namespace Constants.Base
 {
+    /// <summary>
+    /// Clase para configuraciones Globales
+    /// </summary>
     public static class GlobalConfig
     {
         /**

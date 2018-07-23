@@ -5,6 +5,9 @@ using UIKit;
 
 namespace BooksApp
 {
+    /// <summary>
+    /// Clase helper de recurso de colores
+    /// </summary>
     struct ColorsRes
     {
         public static UIColor PrimaryColor { get => UIColor.FromRGB(216, 77, 77); }
